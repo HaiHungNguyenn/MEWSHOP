@@ -1,0 +1,299 @@
+
+.bd{
+    border:2px solid aqua;
+}
+.mg{
+    margin: 0px 10px;
+}
+body{
+    background-color: #f3f3f3;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+    align-items: center;
+}
+*{
+    padding: 0;
+    margin: 0;
+    /* overflow-x: hidden; */
+    font-family: 'Nunito', sans-serif;
+
+}
+/* header */
+header{
+    width: 100%;
+    height: 15vh;
+    background: linear-gradient(#d70018,#f2243B);
+    padding: 20px;
+    color: rgb(218, 215, 215);
+}
+.header_intro{
+    display: flex;
+    justify-content: space-around;
+}
+.header_logo img{
+    background-color:linear-gradient(#d70018,#f2243B);
+}
+.header_search{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    font-size: 25px;
+    
+}
+.header_search input{
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+    padding-left: 20px;
+}
+.header_branch{
+    width: 12%;
+    font-size: 22px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    background-color: rgba(171, 151, 151, 0.471);
+    border-radius: 20px;
+}
+.header_phone,.header_login {
+    display: flex;
+    width: 150px;
+}
+.phone_number,.login_text{
+    display: flex;
+    flex-direction: column;
+}
+.phone_number p:last-child{
+    font-weight:bolder;
+    font-size: 24px;
+}
+.login_text{
+    font-weight: 700;
+}
+.header_cart{
+    display: flex;
+    background-color: rgba(171, 151, 151, 0.471);
+    border-radius: 20px;
+    padding-left: 10px;
+}
+.header_phone,.header_login,.header_cart{
+    width: 12%;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+}
+header .icon{
+    margin-right: 20px;
+    font-size: 20px;
+}
+/* header hover */
+.header_branch:hover{
+    color: gold;
+    cursor: pointer;
+    transition: all ease-in 300ms;
+}
+.phone_number:hover{
+    color: gold;
+    cursor: pointer;
+    transition: all ease-in 300ms;
+}
+.cart_text:hover{
+    color: gold;
+    cursor: pointer;
+    transition: all ease-in 300ms;
+}
+.login_text p:hover{
+    color: gold;
+    cursor: pointer;
+    transition: all ease-in 300ms;
+}
+/* nav */
+nav{
+    height: 5vh;
+    background-color: linear-gradient(#d70018,#f2243b);
+}
+
+.menu{
+    height: 5vh;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+.menu li{
+    display: inline-block;
+    padding: 10px 20px;
+    position: relative;
+}
+.menu li a{
+    text-decoration: none;
+    color:rgb(218, 215, 215) ;
+    font-size: 20px;
+    font-weight: 700;
+}
+.menu li:hover >a{
+    color: gold;
+}
+
+.menu i{
+    font-size: 20px;
+    margin-left: 3px;
+    transform: translateY(-4px);
+}
+/* submenu */
+.submenu{
+    position: absolute;
+    left: 6px;
+    top:100%;
+    justify-content: space-around;
+    display: none;
+    width: 200%;
+    background-color: rgba(204, 204, 204, 0.693);
+}
+.submenu li:first-child{
+    height: 4px;
+    background-color: hsla(0, 100%, 50%, 0.3);
+}
+.submenu>li{
+    display: inline-block;
+    
+}
+.menu li:hover > .submenu{
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-10px);
+    transition: all 5s;
+}
+.submenu li:hover > a{
+    color: red;
+}
+.submenu li a{
+    color: black;
+}
+/* footer */
+footer{
+    margin-top: 30px;
+    width: 100%;
+    height: 60vh;
+    background-color: #ffffff;
+}
+.main_footer{
+    width: 90%;
+    height: 60vh;
+    margin: 0 auto;
+}
+.contact_footer{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    border-bottom: 2px solid #ccc;
+}
+.location{
+    padding-top: 40px;
+    box-sizing: border-box;
+    width: 50%;
+    height: 100%;
+}
+.policy{
+    padding-left: 30px;
+    padding-top: 30px;
+    box-sizing: border-box;
+    width: 20%;
+    height: 100%;
+}
+.location p{
+    margin: 10px 0px;
+    font-size: 20px;
+}
+.policy h3{
+    font-size: 40px;
+}
+.policy li{
+    list-style: none;
+    padding: 10px 0px;
+    font-size: 20px;
+}
+.contact{
+    width: 30%;
+    height: 100%;
+    padding-left: 30px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.contact h3{
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+.social{
+    
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.social img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+.contact p{
+    margin: 20px 0px;
+    font-size: 20px;
+}
+.payment{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.category_footer ul{
+    
+    margin-right:30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.category_footer li{
+    width: 250px ;
+    height: 50px;
+    list-style: none;
+    text-align: justify;
+    line-height: 50px;
+    font-size:18px;
+}
+.category_footer>ul>li>a{
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.732);
+}
+.category_footer>ul>li>a:hover{
+    color: red;
+    transition: all 200ms;
+}
+.policy>ul>li:hover{
+    color: red;
+    transition: all 200ms;
+    cursor: pointer;
+}
+.social>li>a>img:hover{
+    box-shadow: 0px 0px 10px red;
+    scale: 1.5;
+    transition: ease-out 300ms;
+}
+.payment>li>a>img:hover{
+    box-shadow: 0px 0px 10px red;
+    scale: 1.5;
+    transition: ease-out 300ms;
+}
+/* section */
+section{
+    margin: 0 auto ;
+    width: 90%;
+    height: 80vh;
+    background: url(/asset/img/how-to-handle-out-of-stock-products-on-ecommerce-platforms-5f69fb622019e.png) no-repeat;
+    background-size: cover;
+}

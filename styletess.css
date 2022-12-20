@@ -1,0 +1,83 @@
+*{
+    background-color: #ccc;
+}
+.container{
+   display: flex;
+   flex-direction: column;
+    margin: 0 auto;
+    margin-top: 40px;
+    width: 90%;
+    height: 95vh;
+    background-color: #ffffff;
+}
+.head{
+    border: 2px solid aqua;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+}
+.head ul{
+    width: 40%;
+    float: right;
+    display: flex;
+    list-style: none;
+    justify-content:space-around ;
+}
+.head h1{
+    width: 60%;
+    float: left;
+}
+.head>ul>li>a{
+    text-decoration: none;
+    color: black;
+}
+.list_item{
+    width: 100%;
+    height: 85vh ;
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+/* sublist_banner */
+.sublist_banner{
+    width: 21%;
+    height: 40vh ;
+    background: url(/asset/img/bn_pr_3_2.jpg) no-repeat;
+    float: left;
+    background-size: cover;
+    border: 2px solid red;
+}
+.sublist_phone{
+    width: 80%;
+    height: 30vh ;
+    float: right;
+
+}
+.bd {
+    border: 2px solid aqua;
+}
+/* sublist */
+.sub_list-item{
+    width: calc(70%/4);
+    height: 45vh;
+}
+.sub_list-item img{
+    width: 100%;
+    height: 35vh;
+}
+.sub_list-item .item_text{
+    text-align: center;
+}
+.item_text h2{
+    color: red;
+}
+.oldprice{
+    color: red;
+}
+.sublist_phone{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

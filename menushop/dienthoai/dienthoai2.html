@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile shop</title>
+    <link rel="stylesheet" href="dienthoai2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
+</head>
+
+<body>
+    <header>
+        <div class="header_intro">
+            <a href="/mainpage.html">
+                <div class="header_logo  mg">
+                <img src="/asset/img/logo (1).webp" alt="">
+            </div>
+            </a>
+            
+            <div class="header_branch  mg" onclick="showMap();">
+                <p>He Thong cua hang</p>
+                <p>(45 chi nhanh)</p>
+            </div>
+            <div class="header_search  mg">
+                <form action="">
+                    <p><input type="text" placeholder="Tu khoa " ><i class="fa-solid fa-magnifying-glass"></i></p>
+                </form>
+            </div>
+            <div class="header_phone  mg">
+                <div class="icon">
+                    <i class="fa-sharp fa-solid fa-phone"></i>
+                </div>
+                <div class="phone_number">
+                    <p>Goi mua hang</p>
+                    <p>1900 6750</p>
+                </div>
+            </div>
+            <div class="header_login  mg">
+                <div class="icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="login_text">
+                    <p>Dang nhap</p>
+                    <p>Dang ki</p>
+                </div>
+            </div>
+            <div class="header_cart  mg">
+                <div class="icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <p class="cart_text">Them vao gio hang</p>
+            </div>
+
+        </div>
+        <br>
+        <div class="header_nav">
+
+            <nav>
+                    <ul class="menu ">
+                        <li><a href="/menushop/dienthoai/dienthoai1.html">Dien Thoai <i class="fa-sharp fa-solid fa-sort-down"></i></a>
+                            <ul class="submenu">
+                                <li><br></li>
+                                <li><a href="/menushop/dienthoai/dienthoai1.html">Apple</a></li>
+                                <li><a href="/menushop/dienthoai/dienthoai1.html">Samsung</a></li>
+                                <li><a href="/menushop/dienthoai/dienthoai1.html">Xiaomi</a></li>
+                                    
+                            </ul>
+                        </li>
+                        <li><a href="/menushop/dongho/dongho.html">Smart watch</a></li>
+                        <li><a href="/menushop/laptop/laptop.html">laptop <i class="fa-sharp fa-solid fa-sort-down"></i></a>
+                            <ul class="submenu">
+                                <li><br></li>
+                                
+                                <li><a href="/menushop/laptop/laptop.html">Macbook</a></li>
+                                <li><a href="/menushop/laptop/laptop.html">Van phong</a></li>
+                                <li><a href="/menushop/laptop/laptop.html">Gaming</a></li>
+                                <li><a href="/menushop/laptop/laptop.html">Sinh vien</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/notsupportedpage.html">Loa</a></li>
+                        <li><a href="/notsupportedpage.html">Phu kien <i class="fa-sharp fa-solid fa-sort-down"></i></a>
+                            <ul class="submenu">
+                                <li><br></li>
+                                <li><a href="">Phu kien di dong</a></li>
+                                <li><a href="">Phu kien laptop</a></li>
+                                <li><a href="">Phu kien Gaming</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/notsupportedpage.html">Tablet</a></li>
+                        <li><a href="/menushop/dongho/dongho.html">Dong ho</a></li>
+                        <li><a href="/notsupportedpage.html">PC,May in</a></li>
+                        <li><a href="/notsupportedpage.html">May cu gia re</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="bodymain">
+        <div class="imghead">
+            <img src="https://bizweb.dktcdn.net/100/459/533/files/bn-iphone-2.jpg?v=1660805995563" alt=""
+                class="imagehead">
+            <img src="https://bizweb.dktcdn.net/100/459/533/files/bn-iphone-1.jpg?v=1660805995570" alt=""
+                class="imagehead">
+            <span class="headbtn1"><i class="fa-solid fa-backward"></i></span>
+            <span class="headbtn2"><i class="fa-solid fa-forward"></i></span>
+        </div>
+        <div class="main">
+            <!-- cột bên trái -->
+            <div class="fill">
+                <!-- chỗ phân loại -->
+                <div class="sort">
+                    <!-- 1 -->
+                    <div><br>
+                        <span class="tittle">Lọc giá</span>
+                        <div>
+                            <input type="text" class="inputprice" placeholder="Giá tối thiểu">
+                            <input type="text" class="inputprice" placeholder="Giá tối đa">
+                        </div>
+                        <input type="button" value="Áp dụng" class="btnsubmit">
+                    </div>
+                    <br>
+                    <!-- 2 -->
+                    <div>
+                        <span class="tittle"> Thương hiệu</span>
+                        <div class="flexbtninput">
+                            <button class="btninput" onclick="FilerByBrand(phone2, 'phoneProduct','Apple')">Apple</button>
+                            <button class="btninput" onclick="FilerByBrand(phone2, 'phoneProduct','Huawei')">Huawei</button>
+                            <button class="btninput" onclick="FilerByBrand(phone2, 'phoneProduct','Samsung')">Samsung</button>
+                            <button class="btninput" onclick="FilerByBrand(phone2, 'phoneProduct','Xiaomi')">Xiaomi</button>
+                            <button class="btninput" onclick="FilerByBrand(phone2, 'phoneProduct','OPPO')">OPPO</button>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- 3 -->
+                    <div>
+                        <span class="tittle">Loại</span>
+                        <div class="flexbtninput">
+                            <button class="btninput">Android</button>
+                            <button class="btninput">iOS</button>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- 4 -->
+                    <div>
+                        <span class="tittle">Kiểu màn hình</span>
+                        <div class="flexbtninput">
+                            <button class="btninput">Tai thỏ</button>
+                            <button class="btninput">Tràn viền</button>
+                            <button class="btninput">Màn hình gập</button>
+                            <button class="btninput">Giọt nước</button>
+                            <button class="btninput">Nốt ruồi</button>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- 5 -->
+                    <div>
+                        <span class="tittle">Tính năng đặc biệt</span>
+                        <div class="flexbtninput">
+                            <button class="btninput">Sạc không dây</button>
+                            <button class="btninput">Bảo mật vân tay</button>
+                            <button class="btninput">Nhận diện khuôn mặt</button>
+                            <button class="btninput">Kháng nước và bụi</button>
+                            <button class="btninput">Hỗ trợ 5G</button>
+                        </div>
+                    </div>
+                    <br>
+                    <!-- 6 -->
+                    <div>
+                        <span class="tittle">Tính năng camera</span>
+                        <div class="flexbtninput">
+                            <button class="btninput">Chụp góc rộng</button>
+                            <button class="btninput">Chụp xóa phông</button>
+                            <button class="btninput">Quay video 4K</button>
+                            <button class="btninput">Chụp zoom xa</button>
+                            <button class="btninput">Chụp macro</button>
+                            <button class="btninput">Chống rung</button>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <!-- 24h công nghệ -->
+                <div class="congnghe24h">
+                    <span class="tittle24h">24H CÔNG NGHỆ</span><br><br>
+                    <!-- 1 -->
+                    <div class="content24h">
+                        <img src="https://bizweb.sapocdn.net/thumb/large/100/459/533/articles/galaxy-buds-2-pro-face.jpg?v=1660017575640"
+                            alt="" class="img24h">
+                        <a href="" class="hovertext24h">
+                            <p class="text24h">Hé lộ thông số kỹ thuật Galaxy Buds 2 Pro, rất đáng để chờ đợi!!!</p>
+                        </a>
+                    </div>
+                    <hr>
+                    <!-- 2 -->
+                    <div class="content24h">
+                        <img src="https://bizweb.sapocdn.net/thumb/large/100/459/533/articles/cover-20.jpg?v=1660017528540"
+                            alt="" class="img24h">
+                        <a href="" class="hovertext24h">
+                            <p class="text24h">Apple tung ra bản cập nhật iOS 16 Beta 5 dành cho nhà phát triển</p>
+                        </a>
+                    </div>
+                    <hr>
+                    <!-- 3 -->
+                    <div class="content24h">
+                        <img src="https://bizweb.sapocdn.net/thumb/large/100/459/533/articles/realme-narzo-50i-prime-ra-mat-viet-nam-7.jpg?v=1660017343050"
+                            alt="" class="img24h">
+                        <a href="" class="hovertext24h">
+                            <p class="text24h">Realme Narzo 50i Prime ra mắt: Unisoc T612, pin 5000mAh, giá từ 2.79
+                                triệu
+                                đồng</p>
+                        </a>
+                    </div>
+                    <hr>
+                    <!-- 4 -->
+                    <div class="content24h">
+                        <img src="https://bizweb.sapocdn.net/thumb/large/100/459/533/articles/xiaomi-13-series-3-1280x720-800-resize.jpg?v=1658220122433"
+                            alt="" class="img24h">
+                        <a href="" class="hovertext24h">
+                            <p class="text24h">Xiaomi 13 series có thể được trang bị pin một cell 100W, chip sạc thế hệ
+                                mới
+                            </p>
+                        </a>
+                    </div>
+                    <hr>
+                    <!-- 5 -->
+                    <div class="content24h">
+                        <img src="https://bizweb.sapocdn.net/thumb/large/100/459/533/articles/h2-1280x720-800-resize.jpg?v=1658220152440"
+                            alt="" class="img24h">
+                        <a href="" class="hovertext24h">
+                            <p class="text24h">Rò rỉ ảnh chụp phiên bản Surface Duo tầm trung bị Microsoft hủy bỏ</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- cột bên phải -->
+            <div class="cotphai">
+                <div class="sapxeptheo">
+                    <h3>Sắp xếp theo:
+                        <span class="sapxep">Mặc định</span>
+                        <span class="sapxep">Giá tăng dần</span>
+                        <span class="sapxep">Giá giảm dần</span>
+                        <span class="sapxep">Mới nhất</span>
+                    </h3>
+                </div>
+                <hr>
+                <div class="phone">
+                    <div class="childphone" id="phoneProduct">
+                        
+                    </div>
+                    
+                    <!-- button next page -->
+                    <div class="button">
+                        <a href="dienthoai1.html"><button class="linkpage"><i class="fa-solid fa-angles-left"></i></button></a>
+                        <a href="dienthoai1.html"><button class="linkpage"><i class="fa-solid fa-1"></i></button></a>
+                        <button class="linkpage"><i class="fa-solid fa-2"></i></button>
+                        <button class="linkpage"><i class="fa-solid fa-angles-right"></i></button>
+                    </div>
+                    <!-- content of bottom -->
+                    <div>
+                        <div class="tittlebottom">Điện thoại di động – Vật “bất li thân” ở thời đại công nghệ</div> <br>
+
+                        <div class="textbottom">Khi khoa học kỹ thuật liên tục được cải tiến và công nghệ phát triển
+                            không ngừng thì đó
+                            cũng là lúc chiếc điện thoại di động trở nên quan trọng hơn bao giờ hết. Thật vậy, chúng ta
+                            có thể làm được rất nhiều việc: gọi điện, nhắn tin, gửi mail, soạn tài liệu (Word, Excel),
+                            chụp ảnh – quay video, xem phim hay chơi game với thiết bị có kích thước chỉ bằng một bàn
+                            tay.</div><br>
+                        <div class="textbottom">Chính vì vậy, thị trường di động luôn chứng kiến sự cạnh tranh vô cùng
+                            khốc liệt giữa các
+                            nhà sản xuất. Họ sẵn sàng đầu tư nghiên cứu để liên tục cho ra đời những chiếc điện thoại
+                            mới nhất chất lượng, từ giá rẻ, tầm trung, cận cao cấp cho đến cao cấp để đáp ứng tối đa nhu
+                            cầu của mọi đối tượng người dùng.</div><br>
+                        <div>
+                            <table class="table">
+                                <tr>
+                                    <td><strong>RAM</strong></td>
+                                    <td>
+                                        <p>2GB - 12GB</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Bộ nhớ trong</strong></td>
+                                    <td>32GB - 1TB</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Kích thước màn hình</strong></td>
+                                    <td>
+                                        <p> 4.7 inch - 7.6 inch </p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Tần số quét</strong></td>
+                                    <td>60Hz - 144Hz</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Camera sau</strong></td>
+                                    <td>
+                                        <p> 1 camera - 4 camera</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Pin</strong></td>
+                                    <td>2.406mAh - 6.000mAh</td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Hệ điều hành</strong></td>
+                                    <td>
+                                        <p>iOS, Android</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><strong>Giá bán</strong></td>
+                                    <td>2.0000.0000đ đến 20.000.000đ</td>
+                                </tr>
+
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fixed">
+        <span class="paddingfixed"><a href="" class="iconfixed"><i class="fa-solid fa-phone-volume"></i></a></span>
+        <span class="paddingfixed"><a href="" class="iconfixed"><i class="fa-brands fa-facebook-messenger"></i></a></span>
+        <span class="paddingfixed"><a href="" class="iconfixed"><i class="fa-brands fa-instagram"></i></a></span>
+        <span class="paddingfixed"><a href="" class="iconfixed"><i class="fa-brands fa-line"></i></a></span>
+    </div>
+    <footer>
+        <div class="main_footer">
+            <div class="contact_footer">
+                <div class="location">
+                    <img src="/asset/img/logo_foo.webp" alt="">
+                    <p><b>Trụ sở chính: </b>Lacedo Building, 266 Doi Can Street, Ba Dinh District, Hanoi.</p>
+                    <p><b>Email: </b>support@sapo.vn</p>
+                    <p><b>Hotline: </b>1900 6750</p>
+                    <p>Giấy chứng nhận Đăng ký Kinh doanh số 0309532xxx do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp ngày 01/04/2002</p>
+                </div>
+                <div class="policy">
+                    <h3>Chính sách</h3>
+                    <ul>
+                        <li>Chính sách mua hàng</li>
+                        <li>Chính sách đổi trả</li>
+                        <li>Chính sách bảo hành</li>
+                        <li>Gửi góp ý, khiếu nại</li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h3>Kết nối với chúng tôi</h3>
+                    <ul class="social">
+                        <li><a href=""><img src="/asset/img/social/facebook.webp" alt=""></a></li>
+                        <li><a href=""><img src="/asset/img/social/instagram.webp" alt=""></a></li>
+                        <li><a href=""><img src="/asset/img/social/lazada.webp" alt=""></a></li>
+                        <li><a href=""><img src="/asset/img/social/shopee.webp" alt=""></a></li>
+                        <li><a href=""><img src="/asset/img/social/twitter.webp" alt=""></a></li>
+                        <li><a href=""><img src="/asset/img/social/youtube.webp" alt=""></a></li>
+                    </ul>
+                    <p>Phương thức thanh toán</p>
+                    <ul class="payment">
+                        <li><a href=""><img src="/asset/img/social/payment-1.webp" alt=""></a></li>
+                        <li><a href=""><img src="/asset/img/social/payment-2.webp" alt=""></a></li>
+                        <li><a href=""><img src="/asset/img/social/payment-3.webp" alt=""></a></li>
+                        <li><a href=""><img src="/asset/img/social/payment-4.webp" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="category_footer">
+                <ul>
+                    <li><a href="">Điện thoại</a></li>
+                    <li><a href="">Tai nghe</a></li>
+                    <li><a href="">Chuột</a></li>
+                    <li><a href="">Thiết bị nhà thông minh</a></li>
+                    <li><a href="">Smart watch</a></li>
+                    <li><a href="">Ốp lưng, bao da</a></li>
+                    <li><a href="">Bàn phím</a></li>
+                    <li><a href="">Laptop</a></li>
+                    <li><a href="">Loa</a></li>
+                    <li><a href="">Phụ kiện gaming</a></li>
+                    <li><a href="">Máy tính bảng</a></li>
+                    <li><a href="">Pin dự phòng</a></li>
+                    <li><a href="">Camera, webcam</a></li>
+                    <li><a href="">Thiết bị mạng</a></li>
+                    <li><a href="">Cáp, củ sạc</a></li>
+                    <li><a href="">Máy in</a></li>
+                    <li><a href="">Tivi</a></li>
+                    <li><a href="">Màn hình</a></li>
+                    <li><a href="">Máy quét mã vạch</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="/menushop/dienthoai/phonecode2.js"></script>
+</html>

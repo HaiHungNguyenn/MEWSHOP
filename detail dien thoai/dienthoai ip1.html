@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile shop</title>
+    <link rel="stylesheet" href="detail_page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <div class="header_intro">
+            <a href="/mainpage.html">
+                <div class="header_logo  mg">
+                <img src="/asset/img/logo (1).webp" alt="">
+            </div>
+            </a>
+            
+            <div class="header_branch  mg" onclick="showMap();">
+                <p>Hệ thống cửa hàng</p>
+                <p>(45 chi nhánh)</p>
+            </div>
+            <div class="header_search  mg">
+                <form action="">
+                    <p><input type="text" placeholder="Tu khoa " ><i class="fa-solid fa-magnifying-glass"></i></p>
+                </form>
+            </div>
+            <div class="header_phone  mg">
+                <div class="icon">
+                    <i class="fa-sharp fa-solid fa-phone"></i>
+                </div>
+                <div class="phone_number">
+                    <p>Gọi mua hàng</p>
+                    <p>1900 6750</p>
+                </div>
+            </div>
+            <div class="header_login  mg">
+                <div class="icon">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+                <div class="login_text">
+                    <p>Đăng nhập</p>
+                    <p>Đăng kí</p>
+                </div>
+            </div>
+            <div class="header_cart  mg">
+                <div class="icon">
+                    <i class="fa-solid fa-cart-shopping"></i>
+                </div>
+                <p class="cart_text">Thêm vào giỏ hàng</p>
+            </div>
+
+        </div>
+        <br>
+        <div class="header_nav">
+
+            <nav>
+                    <ul class="menu ">
+                        <li><a href="/menushop/dienthoai/dienthoai1.html">Điện thoại <i class="fa-sharp fa-solid fa-sort-down"></i></a>
+                            <ul class="submenu">
+                                <li><br></li>
+                                <li><a href="/menushop/dienthoai/dienthoai1.html">Apple</a></li>
+                                <li><a href="/menushop/dienthoai/dienthoai1.html">Samsung</a></li>
+                                <li><a href="/menushop/dienthoai/dienthoai1.html">Xiaomi</a></li>
+                                    
+                            </ul>
+                        </li>
+                        <li><a href="/menushop/dongho/dongho.html">Smart watch</a></li>
+                        <li><a href="/menushop/laptop/laptop.html">laptop <i class="fa-sharp fa-solid fa-sort-down"></i></a>
+                            <ul class="submenu">
+                                <li><br></li>
+                                
+                                <li><a href="/menushop/laptop/laptop.html">Macbook</a></li>
+                                <li><a href="/menushop/laptop/laptop.html">Văn phòng</a></li>
+                                <li><a href="/menushop/laptop/laptop.html">Gaming</a></li>
+                                <li><a href="/menushop/laptop/laptop.html">Sinh viên</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Loa</a></li>
+                        <li><a href="">Phu kien <i class="fa-sharp fa-solid fa-sort-down"></i></a>
+                            <ul class="submenu">
+                                <li><br></li>
+                                <li><a href="">Phụ kiện di động</a></li>
+                                <li><a href="">Phụ kiện laptop</a></li>
+                                <li><a href="">Phụ kiện Gaming</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="">Tablet</a></li>
+                        <li><a href="">Đồng hồ</a></li>
+                        <li><a href="">PC,Máy in</a></li>
+                        <li><a href="">Máy cũ giá rẻ</a></li>
+                    </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="container">
+        <!--tille-->
+        <div class="tille">
+            <div>
+                <p class="tensanpham">iPhone 13 128GB</p>
+            </div>
+
+            <div class="compared-checkbox">
+                <label>
+                    <input type="checkbox" class="" name="" id="">
+                </label>
+                <span class="">So sánh</span>
+            </div>
+        </div>
+
+
+        <!--main-->
+        <div class="main-product-outline">
+            <!--main-lelf-->
+            <section class="product-outline left">
+                <div class="product-main-picture">
+                    <img src="/detail dien thoai/imgofdienthoai/dt7.webp" id="MainImg" alt="" srcset="" width="100%" height="100% ">
+                </div>
+                <div class="product-picture-collection">
+                    <div class="product-picture-collection-item">
+                        <img src="/detail dien thoai/imgofdienthoai/dt7.webp" alt="" srcset="" width="100%" height="100%"
+                            class="small-img">
+                    </div>
+                    <div class="product-picture-collection-item">
+                        <img src="/detail dien thoai/imgofdienthoai/dt8.webp" alt="" srcset="" width="100%" height="100%"
+                            class="small-img">
+                    </div>
+                    <div class="product-picture-collection-item">
+                        <img src="/detail dien thoai/imgofdienthoai/dt9.webp" alt="" srcset="" width="100%" height="100%"
+                            class="small-img">
+                    </div>
+                   
+                </div>
+            </section>
+            <!--main-center-->
+            <section class="product-outline center">
+                <div>
+                    <p class="fixed-price">19.790.000 ₫ <s style="font-size: 20px; color: gray;">24.590.000 ₫</s></p>
+                </div>
+
+
+
+                <div>
+
+                </div>
+                <div class="counting_part">
+                    <span class="textsoluong">Số lượng:</span>
+                    <span class="minus" onclick="minus()">-</span>
+                    <span class="plus" onclick="plus();">+</span>
+                    <span id="result"> 0</span>
+                </div>
+                <div class="buying-seclection">
+                    <div>
+                        <button type="button" class="buying-btn">
+                            <span class="buying-btn-text"> MUA NGAY</span> <br>
+                            <small class="buying-btn-text">(Giao hàng tận nơi hoặc lấy tại cửa hàng)</small>
+                        </button>
+                    </div>
+                    <div>
+                        <button type="button" class="basket-btn">
+                            <span><i class="fa-solid fa-basket-shopping"></i></span> <br>
+                            <small class="">Thêm vào giỏ hàng</small>
+                        </button>
+                    </div>
+                </div>
+
+
+
+                <div>
+                    <ul>
+                        <small>
+                            <li>Dịch vụ phòng chờ hạng thương gia tại sân bay (Xem chi tiết)</li>
+                            <li>Ưu đãi Iphone gift lên đến <span style="color: red;"> 1.700.000đ </span> (Xem chi tiết)
+                            </li>
+                            <li>Nhập mã <span style="color: red;">MOCAMEW</span> giảm 1 triệu khi thanh toán điện
+                                thoại IP từ 19 triệu qua ví Moca trên ứng dụng <span style="color: green;">GRAB</span>
+                                (Xem chi tiết)
+                            </li>
+                            <li>Nhập mã <span style="color: red;">CPSONL1M</span> khi thanh toán <span
+                                    style="color: blue;">VNPAY</span> qua website hoặc <span
+                                    style="color: red;">CPS1M</span> qua QR Offline tại cửa hàng để giảm thêm 1 triệu
+                                khi mua điện thoại IP từ 19 triệu (Xem chi tiết)
+                            </li>
+
+                        </small>
+                    </ul>
+                </div>
+
+            </section>
+            <!--main-right-->
+            <div class="product-outline right">
+                <div class="hotline-infor">
+                    <div class="hotline-infor-img">
+                        <img src="https://bizweb.sapocdn.net/100/459/533/themes/868331/assets/customer-service.png?1669355819602"
+                            alt="">
+                    </div>
+                    <div class="hotline-infor-text">
+                        <p class="hotline-infor-text1">Gọi ngay <span class="hotline-infor-text-number">1900 123
+                                321</span>
+                            để được tư vấn tốt nhất! </p>
+                    </div>
+                </div>
+                <div class="brand-status">
+                    <p>Tình Trạng: <span class="brand-status1">Còn hàng</span> </p>
+                    <p>Thương hiệu: <span class="brand-status1">Apple</span></p>
+                    <p>Loại: <span class="brand-status1">Iphone</span></p>
+                </div>
+                <div class="product-voucher">
+                    <div class="product-voucher-infor">
+                        <span class="codeuudai">Code ưu đãi</span>
+                        <small>
+                            <br> Nhập mã
+                            <b>NewMobie2022</b>
+                            để được giảm ngay 120k (áp dụng cho đơn hàng trên 500k)
+                        </small>
+                        <br>
+                        <button class="product-voucher-btn-copy" data-copy="NewMobie2022">Sao chép</button>
+                    </div>
+
+                    <div class="product-voucher-infor">
+                        <small>
+                            Nhập mã
+                            <b>NewMM</b>
+                            để được giảm ngay 20% tổng giá trị đơn hàng. Số lượng có hạn
+                        </small>
+                        <br>
+                        <button class="product-voucher-btn-copy" data-copy="NewMobie2022"> Sao chép</button>
+                    </div>
+
+                    <div class="product-voucher-infor">
+                        <small>
+                            Nhập mã
+                            <b>FREESHIP</b>
+                            để được miễn phí ship đơn hàng từ 200k
+                        </small>
+                        <br>
+                        <button class="product-voucher-btn-copy" data-copy="NewMobie2022">Sao chép</button>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+        <!--main- 2 -->
+        <div class="product-detail-main">
+            <div class="product-detail-column sidebar-1">
+                <p>
+                    <b>
+                        Thông tin chi tiết
+                    </b>
+                </p>
+                <ul>
+                    <li>Hiệu năng vượt trội - Chip Apple A15 Bionic mạnh mẽ, hỗ trợ mạng 5G tốc độ cao</li>
+                    <li>Không gian hiển thị sống động - Màn hình 6.1" Super Retina XDR độ sáng cao, sắc nét</li>
+                    <li>Trải nghiệm điện ảnh đỉnh cao - Camera kép 12MP, hỗ trợ ổn định hình ảnh quang học</li>
+                    <li>Tối ưu điện năng - Sạc nhanh 20 W, đầy 50% pin trong khoảng 30 phút</li>
+                </ul>
+                <br>
+                <b style="font-size: 20px; color: red;">Đánh giá iPhone 13 - Flagship được mong chờ năm 2021</b>
+                <p>Cuối năm 2020, bộ 4 iPhone 12 đã được ra mắt với nhiều cái tiến. Sau đó, mọi sự quan tâm lại đổ dồn
+                    vào sản phẩm tiếp theo – iPhone 13. Vậy iP 13 sẽ có những gì nổi bật, hãy tìm hiểu ngay sau đây nhé!
+                </p>
+                <b style="font-size: 20px;">Thiết kế với nhiều đột phá</b>
+                <p>Về kích thước, iPhone 13 sẽ có 4 phiên bản khác nhau và kích thước không đổi so với series iPhone 12
+                    hiện tại. Nếu iPhone 12 có sự thay đổi trong thiết kế từ góc cạnh bo tròn (Thiết kế được duy trì từ
+                    thời iPhone 6 đến iPhone 11 Pro Max) sang thiết kế vuông vắn (đã từng có mặt trên iPhone 4 đến
+                    iPhone 5S, SE).</p>
+                <p>Thì trên điện thoại iPhone 13 vẫn được duy trì một thiết kế tương tự. Máy vẫn có phiên bản khung viền
+                    thép, một số phiên bản khung nhôm cùng mặt lưng kính. Tương tự năm ngoái, Apple cũng sẽ cho ra mắt 4
+                    phiên bản là iPhone 13, 13 mini, 13 Pro và 13 Pro Max.</p>
+                <p>Phần tai thỏ trên iPhone 13 cũng có thay đổi so với thế hệ trước, cụ thể tai thỏ này được làm nhỏ hơn
+                    so với 20%, trong khi đó độ dày của máy vẫn được giữ nguyên. Điểm khác biệt nhất về thiết kế trên
+                    thế hệ iPhone 2021 này đó là camera chéo.</p>
+                <p>Màu sắc trên mẫu iPhone mới này cũng đa dạng hơn, trong đó nổi bật là iPhone 13 màu hồng. Các màu sắc
+                    còn lại đề đã từng được xuất hiện trên các phiên bản trước đó như trắng, đen, đỏ, xanh blue.</p>
+                <b style="font-size: 20px;">Màn hình màn hình Super Retina XDR độ sáng cao</b>
+                <p>Điện thoại iPhone 13 sẽ được sử dụng tấm nền OLED chất lượng cao và có kích thước 6.1 inch, lớn hơn
+                    iPhone 13 mini (5.4 inch). Với tấm nền này với công nghệ ProMotion giúp iPhone 13 tiết kiệm pin đến
+                    tối đa khi sử dụng. Người dùng cũng có thể dễ dàng điều chỉnh tốc độ làm tươi tùy theo ý thích.</p>
+                <p>Về khả năng hiển thị, mang đến chất lượng hiển thị vượt trội với màn hình OLED độ phân giải cao, độ
+                    sáng lớn. Nhờ đó người dùng có thể nhìn rõ trong nhiều điều kiện sáng khác nhau, kể cả ngoài trời.
+                </p>
+                <b style="font-size: 20px;">Camera kép 12MP, hỗ trợ ổn định hình ảnh quang học</b>
+                <p>iPhone 13 có một sự thay đổi lớn về camera so với trên iPhone 12 Series. Cụ thể, iPhone có thể được
+                    trang bị ống kính siêu rộng mới giúp máy hiển thị được nhiều chi tiết hơn ở các bức hình thiếu sáng.
+                    Trong khi đó ống kính góc rộng có thể thu được nhiều sáng hơn, lên đến 47% giúp chất lượng bức ảnh,
+                    video được cải thiện hơn.</p>
+                <p>Số ống kính trên iPhone 13 vẫn được giữ nguyên so với iPhone 12, chỉ khác về vị trí từng ống kinh. Cả
+                    hai ống kính vẫn sở hữu độ phân giải 12MP. Trong đó camera góc rộng được trang bị khẩu độ ƒ / 1.6
+                    trong khi góc siêu rộng là ƒ / 2.4 cùng góc quay 120 độ.</p>
+                <p>Với iP13, người dùng có thể quay phim chuyên nghiệp với chế độ điện ảnh. Cụm camera này cũng hỗ trợ
+                    người dùng chụp cùng lúc nhiều bức ảnh khác nhau mà không cần nhấc ngón tay. Đặc biệt với chế độ
+                    chân dung hỗ trợ làm mờ hậu cảnh chuyên nghiệp giúp toàn bức ảnh tập trung vào chủ thể mà người dùng
+                    hướng tới.</p>
+                <P>Ở chế độ chụp Smart HDR 4, máy có thể nhận diện được tối đa bốn người khác nhau trong một khung hình.
+                    Sau đó sẽ tiến hành tối ưu hóa ánh sáng, độ tương phản và tone mày cho từng người, mang lại một bức
+                    ảnh chất lượng tốt nhất. Nếu sử dụng bên đêm để chụp các bức ảnh thiếu sáng, lúc này chế độ Deep
+                    Fusion kích hoạt và phân tích chế độ phơi sáng ở từng pixel.</P>
+                <b style="font-size: 20px;">Khả năng quay video được cải thiện</b>
+                <p>Về khả năng quay video, iPhone 13 có thể hỗ trợ quay video 4K ở tốc độ ở ba tốc độ khung hình khác
+                    nhau. Máy cũng hỗ trợ tính năng ổn định hình ảnh quang học cùng khả năng zoom 3x. Nhờ đó, hứa hẹn
+                    mang để khả năng quay phim chuyên nghiệp.</p>
+                <b style="font-size: 20px;">Tốc độ 5G tốt hơn với nhiều băng tần</b>
+                <p>Thế hệ iPhone mới được cải thiện chất lượng 5G với nhiều băng tần hơn. Nhờ đó việc xem trực tuyến hay
+                    tải xuống dữ liệu diễn ra nhanh hơn. Đặc biệt với chế độ dữ liệu thông minh, thiết bị sẽ tự động
+                    phát hiện và giảm tải tốc độ khi không cần thiết kể tiết kiệm năng lượng.</p>
+                <b style="font-size: 20px;">Dung lượng bộ nhớ được mở rộng</b>
+                <p>iPhone 12 sở hữu bộ nhớ tiêu chuẩn 64GB và cao cấp nhất là 512GB. Nhưng sang iPhone 13 lại khác,
+                    iPhone 13 phiên bản cao cấp có thể sẽ loại bỏ phiên bản 64GB thay vào đó bản dung lượng bộ nhớ tiêu
+                    chuẩn là 128GB cùng tùy chọn dung lượng lớn nhất lên đến 512B. </p>
+                <b style="font-size: 20px;">Cách tính năng khác: thẻ sim, wifi, siri</b>
+                <p>Ngoài những điểm trên, iPhone 13 cũng vẫn được trang bị 2 sim (1 sim vật lý và 1 esim), tiếp tục hỗ
+                    trợ 5G như trên iPhone 12. Các kết nối không dây khác như wifi, bluetooth cũng được trang bị những
+                    công nghệ mới. Hey Siri cũng là một tính năng yêu thích của người dùng iPhone.</p>
+                <p>Máy vẫn được trang bị công nghệ mở khóa và bảo mật Face ID - nhận đạng khuôn mặt với tốc độ nhanh
+                    hơn. Bên cạnh đó là chuẩn kháng nước và bụi bẩn IP68 theo chuẩn IEC 60529.</p>
+            </div>
+            <div class="product-detail-column sidebar2 ">
+                <div>
+                    <h3>
+                        Thông tin kỹ thuật
+                    </h3>
+                </div>
+                <div class="special-infor">
+                    <h4 class="infor-headline">Màn hình</h4>
+                    <table class="product-table">
+                        <tr class="product-subject 1">
+                            <td class="product-subject1">Công nghệ màn hình</td>
+                            <td class="product-subject2">OLED</td>
+                        </tr>
+                        <tr class="product-subjectt">
+                            <td class="product-subject1">Độ phân giải</td>
+                            <td class="product-subject2">	2532 x 1170 pixels</td>
+                        </tr>
+                        <tr class="product-subject 2">
+                            <td class="product-subject1">Màn hình rộng</td>
+                            <td class="product-subject2">	6.1 inches</td>
+                        </tr>
+                        <tr class="product-subjectt">
+                            <td class="product-subject1">Tính năng màn hình</td>
+                            <td class="product-subject2">Tần số quét 60Hz
+                                Công nghệ HDR10+</td>
+                        </tr>
+                    </table>
+                    <h4 class="infor-headline">Camera sau</h4>
+                    <table class="product-table">
+                        <tr class="product-subject 2">
+                            <td class="product-subject1">Độ phân giải</td>
+                            <td class="product-subject2">
+                                <ul class="textlist">
+                                    <li>	Camera góc rộng: 12MP, f/1.6</li>
+                                    <li>Camera góc siêu rộng: 12MP, ƒ/2.4</li>
+                                 
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr class="product-subjectt">
+                            <td class="product-subject1">Quay phim</td>
+                            <td class="product-subject2">4K 2160p@30fps, FullHD 1080p@60fps</td>
+                        </tr>
+                        <tr class="product-subject 2">
+                            <td class="product-subject1">Đèn flash</td>
+                            <td class="product-subject2">Có</td>
+                        </tr>
+                        <tr class="product-subjectt">
+                            <td class="product-subject1">Tính năng </td>
+                            <td class="product-subject2">Góc rộng <br>
+                                Góc siêu rộng <br>
+                                HDR <br>
+                                Lấy nét theo pha (PDAF) <br>
+                                Siêu cận <br>
+                                Toàn cảnh <br>
+                                Nhận diện khuôn mặt <br>
+                                Xóa phông</td>
+                        </tr>
+                    </table>
+                    <h4 class="infor-headline">Camera trước</h4>
+                    <table class="product-table">
+                        <tr class="product-subject 2">
+                            <td class="product-subject1">Độ phân giải</td>
+                            <td class="product-subject2">	12MP, f/2.2 </td>
+                        </tr>
+                        <tr class="product-subjectt">
+                            <td class="product-subject1">Quay phim</td>
+                            <td class="product-subject2">1080p@30fps</td>
+                        </tr>
+
+                    </table>
+                    <h4 class="infor-headline">Hệ điều hành</h4>
+                    <table class="product-table">
+                        <tr class="product-subject 2">
+                            <td class="product-subject1">OS</td>
+                            <td class="product-subject2">	iOS 15</td>
+                        </tr>
+                        <tr class="product-subjectt">
+                            <td class="product-subject1">CPU</td>
+                            <td class="product-subject2">	Apple A15</td>
+                        </tr>
+                        
+
+                    </table>
+                </div>
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <footer>
+        <div class="main_footer">
+            <div class="contact_footer">
+                <div class="location">
+                    <img src="/asset/img/logo_foo.webp" alt="">
+                    <p><b>Trụ sở chính: </b>Lacedo Building, 266 Doi Can Street, Ba Dinh District, Hanoi.</p>
+                    <p><b>Email: </b>support@sapo.vn</p>
+                    <p><b>Hotline: </b>1900 6750</p>
+                    <p>Giấy chứng nhận Đăng ký Kinh doanh số 0309532xxx do Sở Kế hoạch và Đầu tư Thành phố Hà Nội cấp ngày 01/04/2002</p>
+                </div>
+                <div class="policy">
+                    <h3>Chính sách</h3>
+                    <ul>
+                        <li>Chính sách mua hàng</li>
+                        <li>Chính sách đổi trả</li>
+                        <li>Chính sách bảo hành</li>
+                        <li>Gửi góp ý, khiếu nại</li>
+                    </ul>
+                </div>
+                <div class="contact">
+                    <h3>Kết nối với chúng tôi</h3>
+                    <ul class="social">
+                        <li><a href=""><img src="/asset/img/social/facebook.webp" alt=""></a></li>
+                        <li><a href=""><img src="/asset/img/social/instagram.webp" alt=""></a></li>
+                        <li><a href=""><img src="/asset/img/social/lazada.webp" alt=""></a></li>
+                        <li><a href=""><img src="/asset/img/social/shopee.webp" alt=""></a></li>
+                        <li><a href=""><img src="/asset/img/social/twitter.webp" alt=""></a></li>
+                        <li><a href=""><img src="/asset/img/social/youtube.webp" alt=""></a></li>
+                    </ul>
+                    <p>Phương thức thanh toán</p>
+                    <ul class="payment">
+                        <li><a href=""><img src="/asset/img/social/payment-1.webp" alt=""></a></li>
+                        <li><a href=""><img src="/asset/img/social/payment-2.webp" alt=""></a></li>
+                        <li><a href=""><img src="/asset/img/social/payment-3.webp" alt=""></a></li>
+                        <li><a href=""><img src="/asset/img/social/payment-4.webp" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="category_footer">
+                <ul>
+                    <li><a href="">Điện thoại</a></li>
+                    <li><a href="">Tai nghe</a></li>
+                    <li><a href="">Chuột</a></li>
+                    <li><a href="">Thiết bị nhà thông minh</a></li>
+                    <li><a href="">Smart watch</a></li>
+                    <li><a href="">Ốp lưng, bao da</a></li>
+                    <li><a href="">Bàn phím</a></li>
+                    <li><a href="">Laptop</a></li>
+                    <li><a href="">Loa</a></li>
+                    <li><a href="">Phụ kiện gaming</a></li>
+                    <li><a href="">Máy tính bảng</a></li>
+                    <li><a href="">Pin dự phòng</a></li>
+                    <li><a href="">Camera, webcam</a></li>
+                    <li><a href="">Thiết bị mạng</a></li>
+                    <li><a href="">Cáp, củ sạc</a></li>
+                    <li><a href="">Máy in</a></li>
+                    <li><a href="">Tivi</a></li>
+                    <li><a href="">Màn hình</a></li>
+                    <li><a href="">Máy quét mã vạch</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="detail.page.js"></script>
+
+</html>

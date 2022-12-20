@@ -5,10 +5,58 @@
     font-family: 'Nunito', sans-serif;
 
 }
+a{
+    text-decoration: none;
+    color: black;
+}
 body{
     background-color: #f3f3f3;
     height: 700vh;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
 }
+#map{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.569);
+    display: none;
+}
+#video1,#video2,#video3,#video4{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.569);
+    display: none;
+}
+.video_part{
+    position: fixed;
+    width: 60%;
+    height: 70vh;
+    background-color: rgba(255, 0, 0, 0.555);
+    top: 100px;
+    left: 350px;
+    right: 0;
+    z-index: 1;
+    border-radius: 20px;
+}
+#location_map{
+    position: fixed;
+    width: 60%;
+    height: 70vh;
+    background-color: rgba(255, 0, 0, 0.555);
+    top: 100px;
+    left: 350px;
+    right: 0;
+    display: none;
+    z-index: 1;
+
+}
+
 .bd{
     border: 2px solid aqua;
 }
@@ -123,7 +171,6 @@ nav{
 }
 .menu li{
     display: inline-block;
-    border: 2px solid ;
     padding: 10px 20px;
     position: relative;
 }
@@ -136,6 +183,7 @@ nav{
 .menu li:hover >a{
     color: gold;
 }
+
 .menu i{
     font-size: 20px;
     margin-left: 3px;
@@ -144,12 +192,12 @@ nav{
 /* submenu */
 .submenu{
     position: absolute;
-    left: 4px;
+    left: 6px;
     top:100%;
     justify-content: space-around;
     display: none;
     width: 200%;
-    background-color: #ccc;
+    background-color: rgba(204, 204, 204, 0.693);
 }
 .submenu li:first-child{
     height: 4px;
@@ -227,6 +275,7 @@ nav{
     padding-left: 30px;
     box-sizing: border-box;
 }
+/*  */
 .category_item{
     width: 140px;
     height: 140px;
@@ -331,11 +380,15 @@ nav{
     align-items: center;
     position: relative;
 }
+#change{
+    font-size: 25px;
+    margin-top: 10px;
+}
 .sale_price{
     position: absolute;
     z-index: 1;
     border-radius: 0px 10px  10px 0px;
-    width: 70px;
+    width: 80px;
     height: 30px;
     left: 0;
     top: 10px;
@@ -559,16 +612,20 @@ nav{
     line-height: 40px;
     border-radius: 50%;
     background-color: rgba(204, 204, 204, 0.327);
+    margin-top: 20px;
+
 }
 .trend_item_text:hover >i{
-    transform: translateX(10px);
+    transform: translateX(15px);
     color: red;
     transition: all 300ms;
     background-color: rgba(204, 204, 204, 0.568);
-
+    cursor: pointer;
 }
 .trend_item_text:hover h5{
     color: red;
+    cursor: pointer;
+
 }
 /* hot_stuff */
 .hot_stuff{
@@ -602,18 +659,30 @@ nav{
     padding: 10px 20px;
     background-color: rgba(204, 204, 204, 0.537);
     border-radius: 10px;
+    border: 1px solid rgba(204, 204, 204, 0);
+
 }
 .stuff_brand li a{
     font-size: 20px;
     text-decoration: none;
     color: black;
-
 }
 .stuff_brand{
     
     display: flex;
     align-items: center;
     margin-right: 40px;
+}
+.stuff_brand>ul>li:hover>a{
+    border: red;
+    color: red;
+    transition: all ease-in 300ms;
+
+}
+.stuff_brand>ul>li:hover{
+    border:1px solid red;
+    transition: all  100ms;
+    cursor: pointer;
 }
 .stuff_title h1{
     line-height: 10vh;
@@ -623,25 +692,70 @@ nav{
 }
 .sublist{
     width: 100%;
-    height: 50%;
+    height: 100%;
+    flex-wrap: wrap;
     display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    justify-content: space-around;
 }
 .sublist_banner{
     width: 21%;
-    height: 90%;
+    height: 45%;
     border-radius: 20px;
 }
 .sub_list-item{
     width: calc(70%/4.5);
-    height: 90%;
+    height: 45%;
     box-shadow: 0 0 10px #ccc;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     align-items: center;
+    position: relative;
+}
+.sub_list-item-sale{
+    position: absolute;
+    z-index: 1;
+    border-radius: 0px 20px 20px 0px;
+    width: 80px;
+    height: 30px;
+    left: 0;
+    top: 10px;
+    color: white;
+    line-height:30px ;
+    box-shadow: 5px 5px 5px white;
+    box-shadow: 0px 0px 10px red;
+    background-color: #f2243b;
+}
+.sale_status_icon{
+    position: absolute;
+    z-index: 1;
+    border-radius:20px ;
+    width: 180px;
+    height: 30px;
+    left: 20px;
+    top: 225px;
+    color: white;
+    line-height:30px ;
+    display: flex;
+    background-color: #f2243b;
+}
+.sale_status_icon img{
+    width: 30px!important;
+    height: 30px!important;
+    transform: translateX(1px);
+}
+.sale_status_icon p{
+    margin-left: 10px;
+}
+.bg1{
+    background: linear-gradient(90deg,#f4960a,#d52c10);
+}
+.bg2{
+    background: #e42163!important;
+}
+.bg3{
+    background: #349ee5!important;
 }
 .sub_list-item:hover{
     box-shadow: 0 0 10px black;
@@ -678,20 +792,25 @@ nav{
     margin: 5px 0px;
 }
 .item_text p{
+    width: 100%;
     color: red;
     font-weight: 700;
     font-size: 20px;
 }
 .img2b:hover{
     box-shadow: 0px  0px 20px green;
+    cursor: pointer;
 }
 .img1b:hover{
+    cursor: pointer;
     box-shadow: 0px  0px 20px violet;
 }
 .img3b:hover{
+    cursor: pointer;
     box-shadow: 0px  0px 20px gold;
 }
 .img4b:hover{
+    cursor: pointer;
     box-shadow: 0px  0px 20px red;
 }
 .img4b{
@@ -705,7 +824,7 @@ nav{
 }
 .sublist2{
     margin: 0px auto;
-    width: 94%;
+    width: 95%;
     height: 14.5vh;
     background: url(/asset/img/bn_pr_5.jpg) no-repeat;
     background-size: cover;
@@ -713,7 +832,7 @@ nav{
 }
 .sublist3{
     margin: 0px auto;
-    width: 94%;
+    width: 95%;
     height: 25vh;
     background: url(/asset/img/img_one_banner.webp) no-repeat;
     background-size: cover;
@@ -815,6 +934,11 @@ nav{
     color:rgba(0, 0, 0, 0);
     
     transition: all 1s;
+}
+.review_item:hover>.review_text{
+    color: red;
+    transition: all 1s;
+
 }
 /* news */
 .news{
@@ -965,6 +1089,7 @@ nav{
     box-shadow: 0px 0px 10px red;
     transition: all 300ms;
     filter: drop-shadow(0 0 5px blue);
+    cursor: pointer;
 }
 .news_text:hover>h4{
     color: red;
@@ -972,20 +1097,12 @@ nav{
     cursor: pointer;
 }
 .news_banner:hover{
+    cursor: pointer;
     transition: all 300ms;
     filter: drop-shadow(0 0 10px black);
     box-shadow: 0px 0px 20px black;
 }
-.stuff_brand>ul>li:hover>a{
-    border: red;
-    color: red;
-    transition: all ease-in 300ms;
 
-}
-.stuff_brand>ul>li:hover{
-    border:1px solid red;
-    transition: all  100ms;
-}
 /* footer */
 footer{
     margin-top: 30px;
@@ -1065,7 +1182,7 @@ footer{
     margin-right:30px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 .category_footer li{
     width: 250px ;
@@ -1097,4 +1214,47 @@ footer{
     box-shadow: 0px 0px 10px red;
     scale: 1.5;
     transition: ease-out 300ms;
+}
+/* fixed */
+.fixed{
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    right: -5px;
+    top: 45%;
+    font-size: 40px;
+    background-color: red;
+    width:75px;
+    text-align: center;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.iconfixed{
+    text-decoration: none;
+    color: white;
+    animation: spinning 2s infinite linear;
+}
+.iconfixed:hover{
+    color: black;
+    transition: 1s;
+
+}
+
+.paddingfixed:hover{
+    transform: translateY(-10px);
+    transition: 1s;
+    
+}
+
+.paddingfixed{
+    padding:10px 0px;
+}
+@keyframes spinning{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform:rotate(15deg);
+    }
 }
